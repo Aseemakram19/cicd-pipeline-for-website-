@@ -31,6 +31,7 @@ Switch to root user
 # sudo su –
 Change to working direcotry 
 root@ip-10-0-1-115:/home/ubuntu# cd /var/www
+
 root@ip-10-0-1-115:/var/www# ls -l
 total 12
 drwxr-xr-x 2 root root 4096 Oct  5 10:02 dev
@@ -57,6 +58,7 @@ www-data: This is the name of the group you want to add the user "jenkins" to. I
 jenkins: This is the username of the user you want to modify.
 
 # root@ip-10-0-1-115:/var/www# usermod -aG www-data jenkins
+
 # root@ip-10-0-1-115:/var/www# ls -la
 total 20
 drwxr-xr-x  5 root root 4096 Oct  5 09:18 .
@@ -80,6 +82,7 @@ drwxr-xr-x  2 root    root     4096 Oct  5 10:04 qa
 
 check to switch the to jenkins user
 root@ip-10-0-1-115:/var/www# su jenkins
+
 jenkins@ip-10-0-1-115:/var/www$ cd dev
 jenkins@ip-10-0-1-115:/var/www/dev$ ls
 index.html
